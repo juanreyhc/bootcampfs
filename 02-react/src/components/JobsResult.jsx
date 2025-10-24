@@ -11,13 +11,16 @@ function JobsResult() {
           <h2 style={{ textAlign: "center" }}>Resultados de búsqueda</h2>
 
           <div className="jobs-listings">
-            <JobCard
-              titulo="Desarrollador Frontend"
-              empresa="Tech Solutions Inc."
-              ubicacion="Remoto"
-              descripcion="Únete a nuestro equipo para crear interfaces de usuario increíbles."
-              data={{ modalidad: "remoto", nivel: "junior", technology: "react" }}
-            />
+            {data.map((job) => (
+              <JobCard
+                key={job.id}
+                titulo={job.titulo}
+                empresa={job.empresa}
+                ubicacion={job.ubicacion}
+                descripcion={job.descripcion}
+                data={job.data}
+              />
+            ))}
           </div>
 
           <Pagination />
