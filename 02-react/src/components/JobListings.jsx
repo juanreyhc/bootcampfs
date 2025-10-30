@@ -3,7 +3,7 @@ import JobCard from './JobCard.jsx';
 import data from '../data.json';
 console.log(data);
 
-function JobListings() {
+export function JobListings() {
   return (
         <>
           <h2 style={{ textAlign: "center" }}>Resultados de búsqueda</h2>
@@ -23,5 +23,3 @@ function JobListings() {
         </>
   )
 }
-
-export default JobListings;
