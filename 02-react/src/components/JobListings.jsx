@@ -1,15 +1,12 @@
 import JobCard from './JobCard.jsx';
 
-import data from '../data.json';
-console.log(data);
-
-export function JobListings() {
+export function JobListings({ jobs }) {
   return (
         <>
           <h2 style={{ textAlign: "center" }}>Resultados de búsqueda</h2>
 
           <div className="jobs-listings">
-            {data.map((job) => (
+            {jobs.map((job) => (
               <JobCard
                 key={job.id}
                 titulo={job.titulo}

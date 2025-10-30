@@ -1,12 +1,10 @@
 ///Crear un componente Job Card que lo importe y use adentro de App.jsx
-import React from 'react';
+import { useState } from 'react';
 
  function JobCard({ data, titulo, empresa, ubicacion, descripcion }) {
     //destructuring con useState hook 
     //[valor del estado, forma de actualizar el estado]
-    const [isApplied, setIsApplied] = React.useState(false)//devulve un array de dos elementos
-
-    console.log("---> render");
+    const [isApplied, setIsApplied] = useState(false)//devulve un array de dos elementos
 
     function handleClick() {
         setIsApplied(!isApplied)
