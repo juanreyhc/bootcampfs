@@ -10,8 +10,8 @@ import { useState } from 'react';
         setIsApplied(!isApplied)
       }
 
-    const text = isApplied ? 'Aplicado' : 'Aplicar'
-    const buttonClass = isApplied ? 'is-applied' : ''
+    const buttonText = isApplied ? 'Aplicado' : 'Aplicar'
+    const buttonClass = isApplied ? 'button-apply-job is-applied' : 'button-apply-job'
     const isAppliedText = isApplied ? 'Sí' : 'No'
 
     return (
@@ -28,10 +28,10 @@ import { useState } from 'react';
           </div>
 
           <button
-            className={`button-apply-job ${buttonClass}`}
+            className={buttonClass}
             onClick={handleClick}
           >
-            {text}
+            {buttonText}
           </button>
         </article>
     );
