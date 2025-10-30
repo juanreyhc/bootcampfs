@@ -1,8 +1,9 @@
 
 
 import Header from './components/Header.jsx';
-import JobsSearch from './components/JobsSearch.jsx';
-import JobsResult from './components/JobsResult.jsx';
+import SearchFormSection from './components/SearchFormSection.jsx';
+import JobListings from './components/JobListings.jsx';
+import Pagination from './Pagination.jsx';
 import Footer from './components/Footer.jsx';
 
 
@@ -12,8 +13,14 @@ function App() {
       <Header />
 
       <main>
-        <JobsSearch />
-        <JobsResult />
+        <SearchFormSection />
+
+        <section>
+          <JobListings />
+
+          <Pagination />
+        </section>
+
       </main>
 
       <Footer />

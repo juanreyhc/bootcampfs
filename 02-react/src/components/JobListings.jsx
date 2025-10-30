@@ -1,13 +1,11 @@
-
 import JobCard from './JobCard.jsx';
-import Pagination from './Pagination.jsx';
 
 import data from '../data.json';
 console.log(data);
 
-function JobsResult() {
+function JobListings() {
   return (
-        <section>
+        <>
           <h2 style={{ textAlign: "center" }}>Resultados de búsqueda</h2>
 
           <div className="jobs-listings">
@@ -22,11 +20,8 @@ function JobsResult() {
               />
             ))}
           </div>
-
-          <Pagination />
-
-        </section>
+        </>
   )
 }
 
-export default JobsResult;
+export default JobListings;
